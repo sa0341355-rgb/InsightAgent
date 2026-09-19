@@ -188,26 +188,7 @@ public class MyTool {
 
 The agent will automatically discover and use it.
 
-## Deployment
 
-### Docker
-
-```bash
-docker build -t spring-ai-agent .
-docker run -p 8080:8080 \
-  -e MISTRAL-API-KEY=xxx \
-  -e GITHUB-API-KEY=yyy \
-  -e REDIS_HOST=redis-service \
-  spring-ai-agent
-```
-
-### AWS ECS Fargate
-
-See the existing task definition in `README.md` or deploy using:
-
-```bash
-aws ecs register-task-definition --cli-input-json file://task-definition.json
-```
 
 ## Troubleshooting
 
@@ -229,6 +210,4 @@ aws ecs register-task-definition --cli-input-json file://task-definition.json
 
 MIT
 
-## Support
 
-For questions or issues, check the docs/ folder or create an issue.
